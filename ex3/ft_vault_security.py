@@ -11,7 +11,7 @@ def secure_vault():
 
     print(" === CYBER ARCHIVES - VAULT SECURITY SYSTEM ===\n")
 
-    try:    
+    try:
         print("Initiating secure vault access...")
 
         with open("classified_data.txt", "r") as file1:
@@ -19,7 +19,9 @@ def secure_vault():
             print("SECURE EXTRACTION:")
             print(file1.read())
     except FileNotFoundError:
-        print("ERROR: classified_data.txt not found. Run data generator first.")
+        print(
+            "ERROR: classified_data.txt not found. Run data generator first."
+            )
 
     try:
         with open("security_protocols.txt", "r") as file2:
@@ -29,7 +31,10 @@ def secure_vault():
 
         print("All vault operations completed with maximum security.")
     except FileNotFoundError:
-         print("ERROR: security_protocols.txt not found. Run data generator first.")
+        print(
+            "ERROR: security_protocols.txt not "
+            "found. Run data generator first."
+            )
 
 
 if __name__ == "__main__":

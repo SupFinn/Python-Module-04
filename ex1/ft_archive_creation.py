@@ -9,7 +9,7 @@ def archive_creation():
     """
 
     print("=== CYBER ARCHIVES - PRESERVATION SYSTEM ===\n")
- 
+
     try:
         file = open("new_discovery.txt", "w")
         print(f"Initializing new storage unit: {file.name}")

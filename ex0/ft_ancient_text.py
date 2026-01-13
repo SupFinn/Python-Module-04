@@ -16,7 +16,7 @@ if __name__ == "__main__":
         print("Connection established...\n")
 
         print("RECOVERED DATA:")
-        print(file.read(),)
+        print(file.read())
 
         file.close()
         print("\nData recovery complete. Storage unit disconnected.")
